@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragamonedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="top-nav">
+        <div>
+            PlayFortune
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li>Jugar</li>
+          <li>Reglas del juego</li>
+          <li>Perfil</li>
+        </ul>
+      </section>
+    <h1>Tragamonedas</h1>
+    <div class="container">
+        <div class="slot-container">
+            <div class="slot">0</div>
+            <div class="slot">0</div>
+            <div class="slot">0</div>
+        </div>
+        <div class="controls">
+            <div>apuesta: <span id="apuesta">0</span></div>
+            <div id="apuestas">
+                <button class="apuestaBtn" data-apuesta="10">10</button>
+                <button class="apuestaBtn" data-apuesta="20">20</button>
+                <button class="apuestaBtn" data-apuesta="50">50</button>
+                <button class="apuestaBtn" data-apuesta="100">100</button>
+            </div>
+            <div>
+                <button id="jugarBtn" disabled>Jugar</button>
+                <button id="altoBtn" disabled>Alto</button>
+            </div>
+            <p id="creditos">Creditos: 100</p>
+        </div>
+    </div>
+    <div class="game-info">
+        <h2>¡Bienvenido a nuestro emocionante juego de tragamonedas PlayFortune!</h2>
+        <p>En este juego, tendrás la oportunidad de  probar tu suerte para ganar premios emocionantes. Aquí te explicamos cómo funciona:</p>
+        <h2>Reglas del juego:</h2>
+        <ul>
+          <li>Debes realizar una apuesta antes de comenzar a jugar.</li>
+          <li>Al presionar el botón "Jugar", las casillas comenzarán a generar numeros random, al precionar el boton de Alto se detendrán en posiciones aleatorias.</li>
+          <li>Si los números en las casillas coinciden, ¡has ganado! Recibirás una recompensa basada en el valor de tu apuesta(el valor de tu apuesta * 3).</li>
+          <li>En caso de que los números no coincidan, no te preocupes, ¡siempre tendrás otra oportunidad para ganar en el próximo intento!</li>
+        </ul>
+        <h2>Objetivo del juego:</h2>
+        <p>Tu objetivo principal es obtener combinaciones ganadoras alineando los números en las casillas.</p>
+        <h2>Diviértete y buena suerte en tu aventura de tragamonedas!</h2>
+      </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
